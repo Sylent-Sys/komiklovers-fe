@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glassmorph {
+  @apply p-[10px] rounded-[15px];
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.07) 100%);
+  backdrop-filter: blur(10px);
+}
+
+.gradient1 {
+  border-radius: 5px;
+  background: linear-gradient(131deg, #1D51FE 4.03%, #9B1DFE 99.15%);
+}
+
+.slider {
+  border-radius: 5px;
+  background: linear-gradient(131deg, rgba(29, 81, 254, 0.33) 4.03%, rgba(155, 29, 254, 0.33) 99.15%);
+}
+
+.dots {
+  @apply flex py-[10px] px-0 justify-center;
+}
+
+.dot {
+  @apply w-[12px] h-[12px] rounded-[5px] my-0 mx-[5px] cursor-pointer border-0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.07) 100%);
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #fff;
+}
