@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Homepage",
+  title: "KomikLovers",
 };
 
 export default function RootLayout({

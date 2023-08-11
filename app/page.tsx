@@ -20,7 +20,10 @@ export default function Home() {
       slides: {
         spacing: 15,
       },
-      animationEnded(s) {
+      slideChanged(s) {
+        setCurrentSlide(s.track.details.rel);
+      },
+      dragEnded(s) {
         setCurrentSlide(s.track.details.rel);
       },
       created() {
@@ -63,7 +66,6 @@ export default function Home() {
     <Layout>
       <div className="flex items-center gap-2 mb-4">
         <h1 className="text-lg :text-2xl font-medium">Terpopuler</h1>
-        <FaArrowRight />
       </div>
 
       {/* <div className="navigation-wrapper">      */}
@@ -101,11 +103,7 @@ export default function Home() {
         <FaArrowRight />
       </div>
 
-      <div className="grid grid-rows-10 lg:grid-cols-2 lg:grid-rows-5 gap-4 mt-4">
-        <HomeCard />
-        <HomeCard />
-        <HomeCard />
-        <HomeCard />
+      <div className="grid grid-rows-6 lg:grid-cols-2 lg:grid-rows-3 gap-4 mt-4">
         <HomeCard />
         <HomeCard />
         <HomeCard />
