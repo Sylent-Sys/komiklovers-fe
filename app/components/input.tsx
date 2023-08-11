@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaSistrix } from "react-icons/fa6";
 
 interface InputProps {
@@ -14,12 +15,14 @@ export default function Input({ customClass }: InputProps) {
           name="search"
           placeholder="Search"
         />
-        <button
-          type="submit"
-          className="absolute right-0 top-0 mt-5 mr-4 text-color4"
-        >
-          <FaSistrix />
-        </button>
+        <Link href="/search">
+          <button
+            type="submit"
+            className="absolute right-0 top-0 mt-5 mr-4 text-color4"
+          >
+            <FaSistrix />
+          </button>
+        </Link>
       </div>
     </>
   );
