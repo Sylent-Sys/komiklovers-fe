@@ -12,7 +12,7 @@ export function HomeCard() {
   return (
     <>
       <div className="flex gap-3 glassmorph p-[5px] lg:p-[10px] rounded-md overflow-hidden w-full">
-        <div className="overflow-hidden min-w-[60px] min-h-[84px] lg:min-w-[90px] lg:min-h-[120px] rounded-md relative">
+        <div className="overflow-hidden min-w-[70px] min-h-[94px] lg:min-w-[90px] lg:min-h-[120px] rounded-md relative">
           <Image
             src="https://pbs.twimg.com/media/FtU_lPoXoAI81Ht?format=jpg&name=900x900"
             alt="Picture of the manga"
@@ -21,7 +21,7 @@ export function HomeCard() {
         </div>
         {/* kasih elipsis */}
         <div className="w-full flex flex-col justify-between overflow-hidden">
-          <h2 className="truncate text-[13px] lg:text-base font-semibold">
+          <h2 className="truncate-2-lines text-base font-semibold">
             Daily Life of Sa-chan, a Drugstore Clerk
           </h2>
           <p className="text-xs lg:text-[15px]">Chapter 700</p>
